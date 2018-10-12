@@ -10,4 +10,4 @@ scheme "Game"
 
 sdk "iphoneos12.0"
 
-output_directory "./"
+output_directory "./output"
