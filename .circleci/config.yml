@@ -56,7 +56,7 @@ workflows:
   build-test-adhoc:
     jobs:
       - build-and-test:
-      - adhoc
+      - adhoc:
           #filters:
           #  branches:
           #    only: development
