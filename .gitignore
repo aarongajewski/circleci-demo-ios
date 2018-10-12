@@ -36,3 +36,7 @@ Carthage/Build
 # Fastlane output
 fastlane/report.xml
 fastlane/test_output/
+
+
+vendor/
+.bundle
