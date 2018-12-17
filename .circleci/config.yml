@@ -57,7 +57,7 @@ jobs:
           path: output/Game.ipa
 
 workflows:
-  version: 2
+  version: 2.1
   build-test-adhoc:
     jobs:
       - build-and-test
