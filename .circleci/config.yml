@@ -61,7 +61,7 @@ workflows:
   build-test-adhoc:
     jobs:
       - build-and-test:
-          xcode-version: "10.1"
+          xcode-version: "10.1.0"
           name: xcode101testing
       - build-and-test:
           xcode-version: "10.0.0"
