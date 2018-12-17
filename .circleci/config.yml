@@ -61,16 +61,16 @@ workflows:
   build-test-adhoc:
     jobs:
       - build-and-test:
+          xcode-version: "10.1"
+          name: xcode101testing
+      - build-and-test:
           xcode-version: "10.0.0"
-          name: xcode10testing
+          name: xcode100testing
       - build-and-test:
           xcode-version: "9.4.1"
           name: xcode941testing
-      - build-and-test:
-          xcode-version: "9.2.0"
-          name: xcode920testing
       - adhoc:
           requires:
-            - xcode10testing
+            - xcode101testing
+            - xcode100testing
             - xcode941testing
-            - xcode920testing
