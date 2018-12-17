@@ -60,11 +60,11 @@ workflows:
   version: 2.1
   build-test-adhoc:
     jobs:
-      - build-and-test
+      - build-and-test:
           xcode-version: "10.0.0"
-      - build-and-test
+      - build-and-test:
           xcode-version: "9.4.1"
-      - build-and-test
+      - build-and-test:
           xcode-version: "9.2.0"
       - adhoc:
           requires:
