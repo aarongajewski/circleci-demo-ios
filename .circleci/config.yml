@@ -3,7 +3,7 @@ jobs:
   build-and-test:
     parameters:
       xcode-version:
-        description: "Specify the xcode version you would like to use"
+        description: "Specify the xcode version you wish to use"
         default: "10.1.0"
         type: string
     macos:
